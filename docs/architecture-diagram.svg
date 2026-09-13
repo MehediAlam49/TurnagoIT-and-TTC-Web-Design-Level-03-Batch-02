@@ -1,0 +1,63 @@
+<svg width="100%" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project architecture diagram">
+  <defs>
+    <style>
+      .frame { fill: #0f172a; stroke: #334155; stroke-width: 1.5; rx: 16; }
+      .node { fill: #111827; stroke: #60a5fa; stroke-width: 1.5; }
+      .node-alt { fill: #111827; stroke: #34d399; stroke-width: 1.5; }
+      .label { fill: #e2e8f0; font-size: 18px; font-family: Arial, sans-serif; }
+      .sub-label { fill: #cbd5e1; font-size: 14px; font-family: Arial, sans-serif; }
+      .line {
+        fill: none;
+        stroke: #38bdf8;
+        stroke-width: 3;
+        stroke-dasharray: 10 12;
+        animation: dash 10s linear infinite;
+      }
+      .line-alt {
+        fill: none;
+        stroke: #34d399;
+        stroke-width: 3;
+        stroke-dasharray: 10 12;
+        animation: dash 12s linear infinite reverse;
+      }
+      @keyframes dash {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -220; }
+      }
+    </style>
+  </defs>
+
+  <rect x="20" y="30" width="140" height="210" class="frame" />
+  <text x="90" y="70" text-anchor="middle" class="label">Browser</text>
+  <text x="90" y="100" text-anchor="middle" class="sub-label">Open HTML pages</text>
+
+  <rect x="220" y="30" width="190" height="210" class="frame" />
+  <text x="315" y="70" text-anchor="middle" class="label">Static Pages</text>
+  <text x="315" y="100" text-anchor="middle" class="sub-label">index.html</text>
+  <text x="315" y="125" text-anchor="middle" class="sub-label">about.html</text>
+  <text x="315" y="150" text-anchor="middle" class="sub-label">contact.html</text>
+  <text x="315" y="175" text-anchor="middle" class="sub-label">product.html</text>
+
+  <rect x="470" y="30" width="260" height="210" class="frame" />
+  <text x="600" y="70" text-anchor="middle" class="label">Styling Layer</text>
+  <text x="600" y="100" text-anchor="middle" class="sub-label">CSS files</text>
+  <text x="600" y="125" text-anchor="middle" class="sub-label">Bootstrap CDN / vendor</text>
+  <text x="600" y="150" text-anchor="middle" class="sub-label">Responsive layouts</text>
+  <text x="600" y="175" text-anchor="middle" class="sub-label">Cards, navbars, forms</text>
+
+  <rect x="790" y="30" width="250" height="210" class="frame" />
+  <text x="915" y="70" text-anchor="middle" class="label">Interaction Layer</text>
+  <text x="915" y="100" text-anchor="middle" class="sub-label">JavaScript</text>
+  <text x="915" y="125" text-anchor="middle" class="sub-label">Bootstrap JS</text>
+  <text x="915" y="150" text-anchor="middle" class="sub-label">Carousels / UI actions</text>
+  <text x="915" y="175" text-anchor="middle" class="sub-label">Assets and images</text>
+
+  <path d="M160 135 H220" class="line" />
+  <path d="M410 135 H470" class="line-alt" />
+  <path d="M730 135 H790" class="line" />
+
+  <circle cx="90" cy="135" r="20" class="node" />
+  <circle cx="315" cy="135" r="20" class="node-alt" />
+  <circle cx="600" cy="135" r="20" class="node" />
+  <circle cx="915" cy="135" r="20" class="node-alt" />
+</svg>
